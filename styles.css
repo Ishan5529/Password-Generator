@@ -1,0 +1,164 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+	font-family: Arial, sans-serif;
+}
+
+body {
+	height: 100vh;
+	background: url("https://ik.imagekit.io/d9mvewbju/BBA-NeetoSite-and-Project-Resources/password-generator-container_tarSlyutN.png?updatedAt=1730755103984") no-repeat center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+}
+
+.generator {
+	padding: 30px 60px;
+	border-radius: 10px;
+	width: 100%;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 1px 1px 5px rgb(118, 118, 118);
+}
+
+.display {
+	border-radius: 8px;
+	width: 100%;
+	height: 75px;
+	margin: 30px 0px 20px 0px;
+	padding: 20px;
+	background-color: rgb(232, 232, 255);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+#password {
+	font-size: 25px;
+	width: 80%;
+	background-color: rgb(232, 232, 255);
+	border: none;
+}
+
+#password:focus {
+	border: none;
+	outline: none;
+}
+
+#copy {
+	height: 40px;
+	width: 20%;
+	border: none;
+	border-radius: 5px;
+	font-size: 16px;
+	background-color: #4CAF50;
+	color: white;
+	box-shadow: 0px 0px 3px rgb(166, 166, 166);
+}
+
+#copy:hover {
+	background-color: #45a049;
+}
+
+#instruction {
+	margin-bottom: 30px;
+}
+
+.slidecontainer {
+	/* width: 100%; */
+	margin-bottom: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+
+#slider {
+	width: 180px;
+}
+
+#slider:focus {
+	outline: none;
+}
+
+#sliderValue {
+	position: absolute;
+	right: -30px;
+	font-weight: bold;
+}
+
+.checks {
+	width: 90%;
+	display: flex;
+	align-items: center;
+	justify-content:space-around;
+	flex-wrap: wrap;
+}
+
+/* .check {
+	position: relative;
+	left: 8px;
+} */
+
+.check-label {
+	position: relative;
+	right: 8px;
+}
+
+.facts {
+	margin-top: 20px;
+	display: flex;
+	justify-content: space-between;
+	column-gap: 35px;
+	flex-wrap: wrap;
+}
+
+h2 {
+	margin: 15px 0px;
+
+}
+
+.list-item {
+	position: relative;
+	left: 25px;
+}
+
+.alert {
+	position: absolute;
+	bottom: 20px;
+	left: 10px;
+}
+
+.alertDiv {
+	margin: 5px;
+	color: white;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 5px;
+	z-index: 1;
+}
+
+.hidden {
+	display: none;
+}
+
+#greenDiv {
+	background-color: #4CAF50;
+	width: 250px;
+}
+
+#redDiv {
+	background-color: #e74c3c;
+	width: 450px;
+}

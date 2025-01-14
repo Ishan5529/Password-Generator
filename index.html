@@ -1,0 +1,61 @@
+<html>
+  <head>
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class='container'>
+      <div class='generator'>
+        <h1 id='heading'>Password Generator</h1>
+        <div class='display'>
+          <input type='text' id='password' placeholder='Generate Password' value='' readonly></input>
+          <button id='copy'>Copy Password</button>
+        </div>
+        <p id='instruction'>Use the slider, and select from the options below to lengthen your password and strengthen your security<br>Password Length (6 - 32)</p>
+        <div class="slidecontainer">
+          <label for='slider'>Total Characters:&nbsp;&nbsp;</label>
+          <input type="range" min="6" max="32" value="9" id="slider">
+          <label for='slider' id='sliderValue'>9</label>
+        </div>
+        <div class='checks'>
+          <input type="checkbox" id='number' class='check'></input>
+          <label for='number' class='check-label'>Include Numbers</label>
+          <input type="checkbox" id='letter' class='check'></input>
+          <label for='letter' class='check-label'>Include Letters</label>
+          <input type="checkbox" id='mixedCase' class='check'></input>
+          <label for='mixedCase' class='check-label'>Include Mixed Case</label>
+          <input type="checkbox" id='punctuation' class='check'></input>
+          <label for='punctuation' class='check-label'>Include Punctuations</label>
+        </div>
+      </div>
+      <div class='facts'>
+        <div class='weakPass'>
+          <h2 id='heading2'>Do you use any of these weak passwords?</h2>
+          <ul class='weakList'>
+            <li class='weak list-item'>Password</li>
+            <li class='weak list-item'>123456</li>
+            <li class='weak list-item'>Qwerty</li>
+            <li class='weak list-item'>Your child's name</li>
+            <li class='weak list-item'>I always use the same password</li>
+          </ul>
+        </div>
+        <div class='whyWeak'>
+          <h2 id='heading3'>Why are those passwords weak?</h2>
+          <ul class='reasonList'>
+            <li class='reason list-item'>They're easy to guess or crack.<br>Really easy!</li>
+            <li class='reason list-item'>If any of your logins is<br>compromised, a hacker then has<br>access to all your services.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class='alert'>
+      <div id='greenDiv' class='alertDiv hidden'>
+        Password copied to clipboard!
+      </div>
+      <div id='redDiv' class='alertDiv hidden'>
+        Please select atleast one checkbox to generate password
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
